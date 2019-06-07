@@ -2,8 +2,12 @@
 <html>
 <head>
     <meta charset = "utf-8">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title>NORDIC DESIGN</title>
+    <title>NORDIC DESIGN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>	
     <body>
         <nav class="menu">
@@ -25,44 +29,155 @@
 
         <main class="wrap">
             <div class="profi">
-                <div class="zag2">
-                    <h1>Профи</h1>
+                <div class="profi--zag">
+                    <h1>Знаковые дизайнеры</h1>
                 </div>
-                <div class="portret">
-                    
-                        <div class="b1">                            
-                            <img src="./images/Aalto.jpg" alt="Алвар Аалто">                         
+                <div class="profi--row">
+                        <div class="profi--item" data-toggle="modal" data-target="#profi1">                            
+                            <img src="./images/Aalto.jpg" alt="Алвар Аалто">  
+                            <div class="profi--bottom">
+                                <span class="profi--name">Алвар Аалто</span>
+                                <span class="profi--country">Финляндия</span>
+                            </div>                       
                         </div>    
-                        <div class="b1">                                    
-                            <img src="./images/Aalto.jpg" alt="Алвар Аалто">        
-                        </div>    
-                        <div class="b1">
-                            <img src="./images/Aalto.jpg" alt="Алвар Аалто">                          
+                        <div class="profi--item" data-toggle="modal" data-target="#profi2">                            
+                            <img src="./images/Jacobsen.jpg" alt="Алвар Аалто">  
+                            <div class="profi--bottom">
+                                <span class="profi--name">Арне Якобсен</span>
+                                <span class="profi--country">Дания</span>
+                            </div>                       
+                        </div>
+                        <div class="profi--item">                            
+                            <img src="./images/Vegner.jpg" alt="Ханс Вегнер">  
+                            <div class="profi--bottom">
+                                <span class="profi--name">Ханс Вегнер</span>
+                                <span class="profi--country">Дания</span>
+                            </div>                       
+                        </div>
+                        <div class="profi--item">                            
+                            <img src="./images/Aarnio.jpg" alt="Ээро Аарнио">  
+                            <div class="profi--bottom">
+                                <span class="profi--name">Ээро Аарнио</span>
+                                <span class="profi--country">Финляндия</span>
+                            </div>                       
                         </div> 
-                        <div class="b1">
-                                <img src="./images/Aalto.jpg" alt="Алвар Аалто">                          
-                        </div>   
-                </div> 
-                
-                <div class="portret">
-                        <div class="portret--box">
-                            <h1>РАЗ ДИЗАЙНЕР</h1>    
-                        </div>
-                        <div class="portret--box">
-                            <h1>ДВА ДИЗАЙНЕР</h1>    
-                        </div>
-                        <div class="portret--box">
-                            <h1>ТРИ ДИЗАЙНЕР</h1>    
-                        </div>
-                        <div class="portret--box">
-                            <h1>ЧЕТЫРЕ ДИЗАЙНЕР</h1>    
-                        </div>
-                </div>
-                               
+                    <div class="profi--item">                            
+                        <img src="./images/Poul.jpg" alt="Поуль Хеннингсен">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Поуль Хеннингсен</span>
+                            <span class="profi--country">Дания</span>
+                        </div>                       
+                    </div>    
+                    <div class="profi--item">                            
+                        <img src="./images/Steiv.jpg" alt="Сильвия Стейв">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Сильвия Стейв</span>
+                            <span class="profi--country">Швеция</span>
+                        </div>                       
+                    </div>
+                    <div class="profi--item">                            
+                        <img src="./images/Ivar.jpg" alt="Свен Ивар">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Свен Ивар</span>
+                            <span class="profi--country">Норвегия</span>
+                        </div>                       
+                    </div>
+                    <div class="profi--item">                            
+                        <img src="./images/Isola.jpg" alt="Майя Исола">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Майя Исола</span>
+                            <span class="profi--country">Финляндия</span>
+                        </div>                       
+                    </div> 
+                    <div class="profi--item">                            
+                        <img src="./images/Panton.jpg" alt="Вернер Пантон">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Вернер Пантон</span>
+                            <span class="profi--country">Дания</span>
+                        </div>                       
+                    </div>    
+                    <div class="profi--item">                            
+                        <img src="./images/StigL.jpg" alt="Стиг Линберг">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Стиг Линберг</span>
+                            <span class="profi--country">Швеция</span>
+                        </div>                       
+                    </div>
+                    <div class="profi--item">                            
+                        <img src="./images/Kay.jpg" alt="Кай Франк">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Кай Франк</span>
+                            <span class="profi--country">Финляндия</span>
+                        </div>                       
+                    </div>
+                    <div class="profi--item">                            
+                        <img src="./images/Tone Vigeland Norway.jpg" alt="Тони Вигеланд">  
+                        <div class="profi--bottom">
+                            <span class="profi--name">Тони Вигеланд</span>
+                            <span class="profi--country">Норвегия</span>
+                        </div>                       
+                    </div> 
+                </div>           
             </div>
-                
+            
         </main>
-        
-        
+
+        <div class="modal fade" 
+        id="profi1" 
+        tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header profi--modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Арне Якобсен</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body profi--data">
+                    Скандинавские страны из-за своего географического положения всегда стояли особняком от остальной Европы и развивались поэтому очень самобытно. Живя зачастую в труднодоступных районах с суровым климатом, большинство предметов в доме приходилось делать своими руками, а суровый климат и долгие северные ночи превращали четыре родные стены в основное место времяпровождения. Именно эти особенности повлияли на развитие и особенности скандинавского дизайна мебели и стиля интерьера. Неповторимый демократический дизайн, который соединяет в себе тепло ручного кропотливого труда и высокие технологии, принес скандинавским творениям всемирное признание. Основные черты скандинавского дизайна: <span class="select">чистота линий, функциональность и органические формы.</span> И этот подход используется не только в изготовлении мебели, но и любой мельчайшей детали интерьера, будь то дверная ручка, чайник или кофейный столик. 
+                    <div class="profi--projects">
+                        <div class="profi--projects-item">
+                            <img src="./images/Aalto.jpg" alt="Алвар Аалто">
+                        </div>
+                        <div class="profi--projects-item">
+                            <img src="./images/Aalto.jpg" alt="Алвар Аалто">
+                        </div>
+                        <div class="profi--projects-item">
+                            <img src="./images/Aalto.jpg" alt="Алвар Аалто">
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" 
+          id="profi2" 
+          tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header profi--modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Арне Якобсен</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body profi--data">
+                      Скандинавские страны из-за своего географического положения всегда стояли особняком от остальной Европы и развивались поэтому очень самобытно. Живя зачастую в труднодоступных районах с суровым климатом, большинство предметов в доме приходилось делать своими руками, а суровый климат и долгие северные ночи превращали четыре родные стены в основное место времяпровождения. Именно эти особенности повлияли на развитие и особенности скандинавского дизайна мебели и стиля интерьера. Неповторимый демократический дизайн, который соединяет в себе тепло ручного кропотливого труда и высокие технологии, принес скандинавским творениям всемирное признание. Основные черты скандинавского дизайна: <span class="select">чистота линий, функциональность и органические формы.</span> И этот подход используется не только в изготовлении мебели, но и любой мельчайшей детали интерьера, будь то дверная ручка, чайник или кофейный столик. 
+                      <div class="profi--projects">
+                          <div class="profi--projects-item">
+                              <img src="./images/Aalto.jpg" alt="Алвар Аалто">
+                          </div>
+                          <div class="profi--projects-item">
+                              <img src="./images/Aalto.jpg" alt="Алвар Аалто">
+                          </div>
+                          <div class="profi--projects-item">
+                              <img src="./images/Aalto.jpg" alt="Алвар Аалто">
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
     </body>
 </html>

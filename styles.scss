@@ -27,7 +27,8 @@ html, body {
 
     background-image: url("./images/texture.jpg");
     background-position: left top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    
 
     
     &--logo {
@@ -41,7 +42,7 @@ html, body {
         img {
             width: 5rem;
             margin-top: -12rem;
-            
+            pointer-events: none;
         }
     }
 
@@ -89,15 +90,29 @@ html, body {
     height: 100%;
     
     box-sizing: border-box;
+    
+    &--image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            max-width: 20rem;
+            widows: 100%;
+        
+        }
+    }
 }
 
 .header {
     &--image {
         background-image: url("./images/main-page-image.jpg");
-        background-position: center bottom;
+        background-position: center top;
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 36rem;
+        height: calc(80vw / (1600 / 841));
         width: 100%;
     }
 
@@ -167,19 +182,6 @@ html, body {
     color: rgb(72, 36, 12);
 }
 
-img {
-    width: 30%;
-
-}
-
-.image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
 /* Страница Дизайнеры */
 
 .wrap {
@@ -196,7 +198,190 @@ img {
 .profi {
     display: flex;
     flex-direction: column;
-    margin: 5rem;
+    padding: 5rem;
+    padding-top: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+
+    &--zag {
+        color: rgb(72, 36, 12);
+        width: 100%;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+        box-sizing: 1rem;
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+    }
+
+    &--row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: calc(15rem * 4);
+
+        &-three {
+            max-width: calc(15rem * 3);
+        }
+    }
+
+    &--item {
+        width: 100%;
+        flex: 1 0 50%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        transition: all 0.2s;
+        cursor: pointer;
+        max-width: 13rem;
+        min-width: 10rem;
+
+        &:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &--bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+        background-image: url("./images/texture.jpg");
+        background-repeat: repeat;
+        background-size: 20rem;
+    }
+
+    &--name {
+        color: #48240c;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    &--country {
+        color: white;
+    }
+
+    &--data {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 2rem;
+
+        &-column {
+            flex-direction: row;
+
+            .data-text {
+                max-width: 100%;
+                padding-right: 1rem;
+
+            }
+        }
+
+        @media(max-width: 1100px) {
+            &-column {
+                flex-direction: column;
+
+                .data-text {
+                    max-width: 100%;
+                    padding-right: 0;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    &--projects {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &-item {
+            flex: 1;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &, img {
+                max-width: 20rem;
+            }
+        }
+    }
+
+    &--modal-header {
+        padding: 1rem 2rem;
+    }
+
+    @media(max-width: 1300px) {
+        &--projects {
+            flex-direction: column; 
+            align-items: center;   
+        }
+    }
+}
+
+.gallery {
+    &--projects {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    &--images {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &--images-item {
+        flex: 1;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &, img {
+            max-width: 11.5rem;
+        }
+    }
+
+    @media(max-width: 1100px) {
+        &--projects {
+            margin-right: auto;
+        }
+    }
+
+    @media(max-width: 1300px) {
+        &--projects {
+            flex-direction: column; 
+            align-items: center;   
+        }
+    }
 }
 
 .portret {
@@ -210,11 +395,11 @@ img {
     }
 }
 
-.zag2 {
-    color: rgb(72, 36, 12);
-    padding-left: 2rem;
-    margin-top: -1rem;
-
+@media (min-width: 600px) {
+    .modal-dialog {
+        max-width: 80vw;
+        width: 100%;
+    }
 }
 
 .b1 {
