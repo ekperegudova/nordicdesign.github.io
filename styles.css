@@ -96,7 +96,7 @@ html, body {
 }
 
 .main--image img {
-  max-width: 20rem;
+  max-width: 30rem;
   widows: 100%;
 }
 
@@ -148,7 +148,7 @@ html, body {
 }
 
 .text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Century Gothic, sans-serif;
   font-size: 1.3em;
   max-width: 60rem;
   width: 100%;
@@ -176,12 +176,12 @@ html, body {
 .select {
   color: #cc7722;
   /* Цвет текста */
-  font-family: 'Montserrat', sans-serif;
+  font-family: Century Gothic, sans-serif;
 }
 
 .pod {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-family: Century Gothic, sans-serif;
+  font-size: 1.2em;
   max-width: 60rem;
   width: 100%;
   text-align: center;
